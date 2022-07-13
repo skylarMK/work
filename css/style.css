@@ -294,5 +294,13 @@ a.buttonMod01::before {
 } 
 
 @media (max-width: 480px) {
-  .title:after{ left: 75%;}
+  .title:after{ left: 85%;}
+  .imgCon {
+    width: 210px;
+    height: 80px;
+    left: -44%;
+    top: 75%;
+  }
+  .listBox{ width: 80%;}
+  .listArea { margin: 14% 0 0 0;}
 }
