@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing:border-box;}
+html{
+	-webkit-text-size-adjust:none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+.wrapper{
+  padding: 55px 0 100px 0;
+  min-width: 1000px;
+  background: linear-gradient(90deg,#FFF 0%,#FFF 30%,#e2e2e2 30%,#e2e2e2 100%);
+  background: -webkit-linear-gradient(0deg,#FFF 0%,#FFF 30%,#e2e2e2 30%,#e2e2e2 100%);
+  letter-spacing: 1px;
+}
+img{
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+a{text-decoration: none;}
+.title{
+  max-width: 1200px;
+  margin: 0 5% 2% 5%;
+  color: #000;
+  font-size: 50px;  
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.25em;
+  position: relative;
+  text-align: left;
+}
+.title:after{
+  content: " ";
+  display: block;
+  width: 55px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  left: 25%;
+  top: 70%;
+  transform: translate(-50%,-50%);
+}
+.carouselNav {
+  position: absolute;
+  top: 100%;
+  left: 78%;
+  transform: translate(-50%, -50%);  
+  width: fit-content;
+}
+button{ border:0;}
+.carouselNav .carouselNav_prev:focus,
+.carouselNav .carouselNav_next:focus { outline: none;}
+.carouselNav .carouselNav_next{
+  width: 70px;
+  height: 70px;
+  background: #222 url(../images/slider_next.png) no-repeat 50% 50%;
+  z-index: 1;  
+}
+.carouselNav .carouselNav_prev{
+  width: 70px;
+  height: 70px;
+  background: #222 url(../images/slider_prev.png) no-repeat 50% 50%;
+  z-index: 1;  
+  margin-right: 1px;
+}
+a.item{
+  position: relative;
+}
+a.item:hover img{ opacity: 0.8; }
+a.item:hover .imgCon{ opacity: 1; }
+.imgCon{
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background: rgba(255,255,255,0.9);
+  left: -50%;
+  top: 80%;
+  transform: translate(-50%,-50%);
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+  opacity: 0; 
+  filter: drop-shadow(0px 0px 6px #222222); 
+}
+.owl-item.active .imgCon{ 
+  animation: dissolve 2s forwards; 
+  animation-iteration-count:1;
+  animation-timing-function：ease-in-out;
+}
+.owl-item.active .text01,.owl-item.active .text02{
+  animation: position 2s 0.5s forwards; 
+  animation-iteration-count:1;
+  animation-timing-function:ease-in-out;
+}
+@keyframes dissolve{
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+@keyframes position{
+  0%{ 
+    transform: translateY(0px); 
+  }
+  100%{ 
+    transform: translateY(-5px);
+  }
+}
+.text01{
+  font-size: 1.2rem;
+}
+.text02{
+  color: #767676;
+  font-size: 0.9rem;
+}
+.listArea{ 
+  margin: 2% 0; 
+  display: flex;
+  justify-content: center;
+}
+.listBox{ 
+  width: 33%; 
+  margin: 0 2%;
+}
+.listBox:last-child{
+  margin-top: 200px;
+}
+.list {  
+  height: auto;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 10% auto;
+}
+.list img{
+  height: auto;
+  width: 100%;
+  z-index: -1;
+}
+.listItem{
+  display: block;
+  height: 100%;
+  top: 0;
+  left:0;
+  width:var(--w);
+  position: absolute;
+  z-index:2;
+  color: #ffffff;
+  text-decoration: none;
+}
+.listItem:hover{     
+  background: repeating-linear-gradient(var(--angle), #a4d850, #fccf46, #ed9700, #fccf46, #a4d850 var(--d));
+  background-size: calc(var(--d)/var(--sinus)) 100%;
+  animation: AnimationName 2s linear infinite reverse;
+  opacity: 0.7;
+}
+.listItem1:hover:after,.listItem2:hover:after,.listItem3:hover:after,.listItem4:hover:after,.listItem5:hover:after,.listItem6:hover:after,
+.listItem7:hover:after,.listItem8:hover:after,.listItem9:hover:after,.listItem10:hover:after{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  color: #d20040;
+  font-weight: 800;
+}
+.listItem1:hover:after{ content: "娛樂星聞網";}
+.listItem2:hover:after{ content: "新媒體事業群";}
+.listItem3:hover:after{ content: "耶誕點亮派對";}
+.listItem4:hover:after{ content: "閃光情人節";}
+.listItem5:hover:after{ content: "寶島神很大";}
+.listItem6:hover:after{ content: "歡迎光臨卡西牛";}
+.listItem7:hover:after{ content: "12星座媽媽送禮指南";}
+.listItem8:hover:after{ content: "少子化專題";}
+.listItem9:hover:after{ content: "殭屍咚咚拳王";}
+.listItem10:hover:after{ content: "K劇之王";}
+
+@keyframes AnimationName {
+  0% {
+    background-position: calc(var(--d)/var(--sinus)) 0;
+  }
+}
+
+/*contact*/
+.button01 {
+  position: relative;
+  margin: 51px 0 0 0;
+  padding-top: 110px;
+  line-height: 0;
+}
+.button01::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  margin-left: -1.5px;
+  width: 2px;
+  height: 55px;
+  background: #222;
+}
+a.buttonMod01 {
+  position: relative;
+  display: inline-block;
+  padding: 43px 10px 0 10px;
+  width: 400px;
+  height: 94px;
+  background: #222;
+  background: linear-gradient(45deg, rgba(34,34,34,1), rgba(34,34,34,1), rgba(34,34,34,1));
+  color: #FFF;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  text-indent: 0.15em;
+  letter-spacing: 0.15em;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 20%);
+  -webkit-box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+a.buttonMod01:hover {
+	background: linear-gradient(45deg, rgba(0,0,255,.7), rgba(255,255,0,.5), rgba(255,0,0,.7));
+	background: -webkit-linear-gradient(45deg, rgba(0,0,255,.7), rgba(255,255,0,.5), rgba(255,0,0,.7));
+	background-size: 120% 120%;
+	animation: AnimeGrade 10s ease infinite;
+	text-decoration: none;
+	letter-spacing: 0.28em;
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+  color: #3d3d3d;
+}
+.button01 .buttonMod01 {
+  margin-bottom: -47px;
+}
+a.buttonMod01::before {
+  content: '';
+  position: absolute;
+  top: 47px;
+  right: 0;
+  width: 20px;
+  height: 1px;
+  background-color: #FFF;
+  transition: .2s;
+}
+.show.is_done {
+  opacity: 1;
+  -webkit-transform: translate(0, 0px);
+  -ms-transform: translate(0, 0px);
+  transform: translate(0, 0px);
+}
+
+
+@media (max-width: 1500px) {
+  .listBox{ width: 36%;}
+}
+
+@media (max-width: 1200px) {
+  .wrapper{
+    min-width: 100%;
+    width: 100%;
+  }
+  .list,.list img{ width: 100%;}
+  .title:after{ left: 30%;}
+  .listArea{
+    width: 100%;
+    display: block;
+    margin: 7% 0 0 0;
+  }
+  .listBox{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .listBox:last-child{ margin-top: 0;}
+}
+
+@media (max-width: 900px) {
+  .title:after{ left: 50%;}
+  .carouselNav .carouselNav_prev,.carouselNav .carouselNav_next {
+    width: 50px;
+    height: 50px
+  }
+} 
+
+@media (max-width: 480px) {
+  .title:after{ left: 75%;}
+}
