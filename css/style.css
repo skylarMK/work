@@ -178,7 +178,7 @@ a.item:hover .imgCon{ opacity: 1; }
 .listItem6:hover:after{ content: "歡迎光臨卡西牛";}
 .listItem7:hover:after{ content: "12星座媽媽送禮指南";}
 .listItem8:hover:after{ content: "少子化專題";}
-.listItem9:hover:after{ content: "殭屍咚咚拳王";}
+.listItem9:hover:after{ content: "全能媽媽All In One";}
 .listItem10:hover:after{ content: "K劇之王";}
 
 @keyframes AnimationName {
