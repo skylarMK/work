@@ -68,6 +68,7 @@ button{ border:0;}
 }
 a.item{
   position: relative;
+  display: block;
 }
 a.item:hover img{ opacity: 0.8; }
 a.item:hover .imgCon{ opacity: 1; }
@@ -298,7 +299,7 @@ a.buttonMod01::before {
   .imgCon {
     width: 210px;
     height: 80px;
-    left: -44%;
+    left: 105px;
     top: 75%;
   }
   .listBox{ width: 80%;}
