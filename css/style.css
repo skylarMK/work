@@ -315,6 +315,14 @@ a.buttonMod01::before {
   .listBox{ width: 36%;}
 }
 
+@media (max-width: 1300px) {
+  .imgCon{
+    width: 250px;
+    height: 80px;
+    left: 30%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wrapper{
     min-width: 100%;

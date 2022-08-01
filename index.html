@@ -181,7 +181,7 @@
   <script type="text/javascript">
     $('.carousel').owlCarousel({
       loop:true,
-      autoplay:false,
+      autoplay:true,
       margin:10,
       nav:true,
       dots:false,
@@ -191,8 +191,11 @@
       navContainerClass: "carouselNav",
       responsive : {
         1200:{
+          stagePadding: 250,
+        },
+        1300:{
           stagePadding: 350,
-        }        
+        }  
       }
   })
   </script>
