@@ -216,6 +216,15 @@ a.item:hover .imgCon{ opacity: 1; }
   font-size: 1.5rem;
   color: #d20040;
   font-weight: 800;
+  /* -webkit-animation-name: scrollArrow;
+			        animation-name: scrollArrow;
+			-webkit-animation-duration: 3s;
+			        animation-duration: 3s;
+			-webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+			        animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+			-webkit-animation-iteration-count: infinite;
+			        animation-iteration-count: infinite; */
+
 }
 .listItem1:hover:after{ content: "娛樂星聞網";}
 .listItem2:hover:after{ content: "新媒體事業群";}
@@ -223,7 +232,7 @@ a.item:hover .imgCon{ opacity: 1; }
 .listItem4:hover:after{ content: "閃光情人節";}
 .listItem5:hover:after{ content: "寶島神很大";}
 .listItem6:hover:after{ content: "歡迎光臨卡西牛";}
-.listItem7:hover:after{ content: "南門國小電子校刊";}
+.listItem7:hover:after{ content: "12星座的媽媽送禮指南";}
 .listItem8:hover:after{ content: "少子化專題";}
 .listItem9:hover:after{ content: "全能媽媽All In One";}
 .listItem10:hover:after{ content: "K劇之王";}
@@ -235,6 +244,74 @@ a.item:hover .imgCon{ opacity: 1; }
     background-position: calc(var(--d)/var(--sinus)) 0;
   }
 }
+
+
+
+/* @-webkit-keyframes scrollArrow {
+  0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+  }
+  15% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+  }
+  49% {
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+        opacity: 0;
+  }
+  51% {
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        opacity: 0;
+  }
+  85% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+  }
+  100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+  }
+}
+
+@keyframes scrollArrow {
+  0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+  }
+  15% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+  }
+  49% {
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+        opacity: 0;
+  }
+  51% {
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        opacity: 0;
+  }
+  85% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+  }
+  100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+  }
+} */
 
 /*contact*/
 .button01 {
